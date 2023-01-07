@@ -1,0 +1,221 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgba(24, 23, 23, 0.915);
+}
+
+:root {
+    --white: white;
+    --bg: #333;
+    --mon: 'Montserrat';
+}
+
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgb(30, 30, 30);
+
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.looked {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    column-gap: 30px;
+    /* position: relative; */
+
+}
+
+
+
+
+
+
+.header-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: Logoanim 5s infinite;
+}
+
+@keyframes Logoanim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(-60deg);
+    }
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.header-title {
+    font-weight: 600;
+    font-family: var(--mon);
+    color: var(--white);
+    font-size: 35px;
+
+}
+.header-text {
+    color: var(--white);
+    font-family: var(--mon);
+    font-weight: 400;
+    font-size: 20px;
+    background: rgb(53, 50, 50);
+    padding: 7px 25px;
+    border-radius: 13px;
+    transition: .3s;
+}
+
+.header-text:hover {
+    background: rgb(72, 71, 71);
+    color: rgb(31, 30, 30);
+}
+
+.header-title:hover {
+    color: rgb(97, 96, 96);
+}
+
+
+.contacts {
+    border-top: 2px solid rgb(24, 22, 22);
+    box-shadow: 0 0 2px 0;
+    margin-bottom: 15px;
+    transition: 10s;
+
+}
+
+.email-number-date {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    align-items: center;
+    row-gap: 30px;
+
+
+    flex-shrink: 1;
+    padding: 15px;
+}
+
+
+.email {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.email-add,
+.number-add,
+.date {
+    color: gray;
+    padding: 10px 10px;
+
+    box-shadow: 0px 0px 1px 0px;
+    border-radius: 5px;
+}
+
+.email-text,
+.number-text,
+.date-text {
+    font-size: 20px;
+    color: var(--white);
+    font-family: var(--mon);
+    font-weight: 500;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.date-birth {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    column-gap: 10px;
+}
+
+.instagram-icon {
+    font-size: 15px;
+    color: gray;
+    padding: 5px 5px;
+    /* border: 2px solid rgb(24, 22, 22); */
+    box-shadow: 0px 1px 1px;
+    border-radius: 5px;
+}
+
+
+.telegram-icon {
+    font-size: 15px;
+    color: gray;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px;
+
+}
+
+
+
+.contact {
+    position: absolute;
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 0 0 0 8px;
+    font-family: var(--mon);
+    font-weight: 400;
+    font-size: 15px;
+    background-color: rgb(53, 50, 50);
+    top: 0px;
+    right: 0px;
+}
